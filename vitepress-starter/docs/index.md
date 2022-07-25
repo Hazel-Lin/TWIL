@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/README
+      link: /README
     - theme: alt
       text: View on GitHub
       link: https://github.com/Hazel-Lin/TWIL

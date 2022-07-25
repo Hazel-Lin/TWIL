@@ -10,9 +10,8 @@ export default ({
 
     sidebar: {
       '/Q&A/': sidebarQA(),
-      '/BLL/': sidebarBLL(),
-      '/guide/': sidebarGuide(),
-      '/config/': sidebarConfig(),
+      '/utils/': sidebarUtils(),
+      '/css/': sidebarCSS(),
       '/book/': sidebarBook(),
       '/other/': sidebarOther(),
       '/JavaScript/':sidebarJS(),
@@ -23,34 +22,23 @@ export default ({
       { icon: 'github', link: 'https://github.com/Hazel-Lin/TWIL' }
     ],
 
-    footer: {
-      // message: 'Released under the MIT License.',
-      // copyright: 'Copyright © 2019-present Evan You'
-    },
-
     algolia: {
       appId: '8J64VVRP8K',
       apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
       indexName: 'vitepress'
     },
-    
-    // carbonAds: {
-    //   code: 'CEBDT27Y',
-    //   placement: 'vuejsorg'
-    // }
   }
 })
 
 function nav() {
   return [
     { text: 'Q&A', link: '/Q&A/README', activeMatch: '/Q&A/' },
-    { text: 'BLL', link: '/BLL/README', activeMatch: '/BLL/' },
+    { text: 'Utils', link: '/utils/README', activeMatch: '/utils/' },
     { text: 'Book', link: '/book/README', activeMatch: '/book/' },
     { text: 'Other', link: '/other/README', activeMatch: '/other/' },
     { text: 'JavaScript', link: '/JavaScript/README', activeMatch: '/JavaScript/' },
     { text: 'Components', link: '/components/README', activeMatch: '/components/' },
-
-
+    { text: 'CSS', link: '/css/README', activeMatch: '/css/' },
   ]
 }
 function sidebarComponents(){
@@ -103,27 +91,27 @@ function sidebarBook(){
     }
   ]
 }
-function sidebarBLL() {
+function sidebarUtils() {
   return [
    
     {
       text: '业务处理逻辑',
       collapsible: true,
       items: [
-        { text: '按钮强制失焦', link: '/BLL/按钮强制失焦' },
-        { text: '导出功能', link: '/BLL/导出功能' },
-        { text: '导入功能', link: '/BLL/导入功能' },
-        { text: '动画函数', link: '/BLL/动画函数' },
-        { text: '获取富文本的字数长度', link: '/BLL/获取富文本的字数长度' },
-        { text: '清除input框样式', link: '/BLL/清除input框样式' },
-        { text: '清空重置', link: '/BLL/清空重置' },
-        { text: '数据删除', link: '/BLL/数据删除' },
-        { text: '数字三位逗号分隔', link: '/BLL/数字三位逗号分隔' },
-        { text: '图片预览', link: '/BLL/图片预览' },
-        { text: '脱敏处理', link: '/BLL/脱敏处理' },
-        { text: '校验封装', link: '/BLL/校验封装' },
-        { text: '校验失效', link: '/BLL/校验失效' },
-        { text: '修改下载文件名称', link: '/BLL/修改下载文件名称' },
+        { text: '按钮强制失焦', link: '/utils/按钮强制失焦' },
+        { text: '导出功能', link: '/utils/导出功能' },
+        { text: '导入功能', link: '/utils/导入功能' },
+        { text: '动画函数', link: '/utils/动画函数' },
+        { text: '获取富文本的字数长度', link: '/utils/获取富文本的字数长度' },
+        { text: '清除input框样式', link: '/utils/清除input框样式' },
+        { text: '清空重置', link: '/utils/清空重置' },
+        { text: '数据删除', link: '/utils/数据删除' },
+        { text: '数字三位逗号分隔', link: '/utils/数字三位逗号分隔' },
+        { text: '图片预览', link: '/utils/图片预览' },
+        { text: '脱敏处理', link: '/utils/脱敏处理' },
+        { text: '校验封装', link: '/utils/校验封装' },
+        { text: '校验失效', link: '/utils/校验失效' },
+        { text: '修改下载文件名称', link: '/utils/修改下载文件名称' },
       ]
     },
   ]
@@ -178,78 +166,17 @@ function sidebarQA() {
 
       ]
     },
-   
   ]
 }
 
-function sidebarGuide() {
+function sidebarCSS() {
   return [
     {
-      text: 'Introduction',
+      text: 'CSS',
       collapsible: true,
       items: [
-        { text: 'What is VitePress?', link: '/guide/what-is-vitepress' },
-        { text: 'Getting Started', link: '/guide/getting-started' },
-        { text: 'Configuration', link: '/guide/configuration' },
-        { text: 'Deploying', link: '/guide/deploying' }
+        { text: 'css文字超出处理', link: '/css/css文字超出处理' },
       ]
     },
-    {
-      text: 'Writing',
-      collapsible: true,
-      items: [
-        { text: 'Markdown', link: '/guide/markdown' },
-        { text: 'Asset Handling', link: '/guide/asset-handling' },
-        { text: 'Frontmatter', link: '/guide/frontmatter' },
-        { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
-        { text: 'API Reference', link: '/guide/api' }
-      ]
-    },
-    {
-      text: 'Theme',
-      collapsible: true,
-      items: [
-        { text: 'Introduction', link: '/guide/theme-introduction' },
-        { text: 'Nav', link: '/guide/theme-nav' },
-        { text: 'Sidebar', link: '/guide/theme-sidebar' },
-        { text: 'Prev Next Link', link: '/guide/theme-prev-next-link' },
-        { text: 'Edit Link', link: '/guide/theme-edit-link' },
-        { text: 'Last Updated', link: '/guide/theme-last-updated' },
-        { text: 'Layout', link: '/guide/theme-layout' },
-        { text: 'Home Page', link: '/guide/theme-home-page' },
-        { text: 'Team Page', link: '/guide/theme-team-page' },
-        { text: 'Footer', link: '/guide/theme-footer' },
-        { text: 'Search', link: '/guide/theme-search' },
-        { text: 'Carbon Ads', link: '/guide/theme-carbon-ads' }
-      ]
-    },
-    {
-      text: 'Migrations',
-      collapsible: true,
-      items: [
-        {
-          text: 'Migration from VuePress',
-          link: '/guide/migration-from-vuepress'
-        },
-        {
-          text: 'Migration from VitePress 0.x',
-          link: '/guide/migration-from-vitepress-0'
-        }
-      ]
-    }
-  ]
-}
-
-function sidebarConfig() {
-  return [
-    {
-      text: 'Config',
-      items: [
-        { text: 'Introduction', link: '/config/introduction' },
-        { text: 'App Configs', link: '/config/app-configs' },
-        { text: 'Theme Configs', link: '/config/theme-configs' },
-        { text: 'Frontmatter Configs', link: '/config/frontmatter-configs' }
-      ]
-    }
   ]
 }

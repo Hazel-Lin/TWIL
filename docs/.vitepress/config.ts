@@ -59,9 +59,7 @@ function sidebarJS(){
       text: 'JavaScript',
       collapsible: true,
       items: [
-        { text: '对象如何使用变量作为key', link: '/JavaScript/对象如何使用变量作为key' },
-        { text: '程序员软技能', link: '/JavaScript/数组包含' },
-        { text: '代码优化上的思考', link: '/JavaScript/数组判断' },
+        
       ]
     }
   ]
@@ -112,6 +110,9 @@ function sidebarUtils() {
         { text: '校验封装', link: '/utils/校验封装' },
         { text: '校验失效', link: '/utils/校验失效' },
         { text: '修改下载文件名称', link: '/utils/修改下载文件名称' },
+        { text: '对象如何使用变量作为key', link: '/utils/对象如何使用变量作为key' },
+        { text: '数组包含', link: '/utils/数组包含' },
+        { text: '数组判断', link: '/utils/数组判断' },
       ]
     },
   ]
